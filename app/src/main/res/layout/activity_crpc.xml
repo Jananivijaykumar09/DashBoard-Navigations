@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/headerTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CRPC Page"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:background="@color/dark_blue"
+        android:textColor="@color/white"/>
+
+    <!-- ScrollView for content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/headerTextView">
+
+        <!-- Content layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- ListView for displaying data -->
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="8dp"
+                android:padding="16dp"
+                android:background="@drawable/roundforcrpc"/>
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back_arrow"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

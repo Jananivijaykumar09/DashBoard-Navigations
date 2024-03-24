@@ -1,0 +1,178 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/hello"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/profile_default"
+        android:scaleType="centerCrop" />
+
+    <!-- Back Arrow -->
+    <ImageView
+        android:id="@+id/backArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back_arrow"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:padding="8dp"
+        android:visibility="visible" />
+
+    <!-- Circular Profile Image -->
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/proback"
+        android:layout_marginTop="50dp"
+        android:scaleType="centerCrop"
+        android:padding="5dp"
+        android:cropToPadding="true" />
+
+    <!-- Content Layout -->
+    <LinearLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileImage"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/background_gradient">
+
+        <!-- Username EditText -->
+        <EditText
+            android:id="@+id/usernameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_bg_rounded"
+            android:hint="Username"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:inputType="text" />
+
+        <!-- Email EditText -->
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_bg_rounded"
+            android:hint="Email Address"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:inputType="textEmailAddress" />
+
+        <!-- Phone EditText -->
+        <EditText
+            android:id="@+id/phoneEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_bg_rounded"
+            android:hint="Phone Number"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:inputType="phone" />
+
+        <!-- LinkedIn EditText -->
+        <EditText
+            android:id="@+id/linkedinEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_bg_rounded"
+            android:hint="LinkedIn"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:inputType="textUri" />
+
+        <!-- Edit Profile Button -->
+        <Button
+            android:id="@+id/saveProfileButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#3b475c"
+            android:text="save"
+            android:textColor="#FFFFFF" />
+
+        <!-- About Us Button -->
+        <Button
+            android:id="@+id/editProfileButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3b475c"
+            android:text="edit"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/aboutUsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About Us"
+            android:backgroundTint="#3b475c"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp" />
+
+        <!-- Contact Us Button -->
+        <Button
+            android:id="@+id/contactUsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact Us"
+            android:backgroundTint="#3b475c"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp" />
+
+        <!-- Dark Mode Switch -->
+        <Switch
+            android:id="@+id/darkModeSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dark Mode"
+            android:textColor="@color/black"
+            android:thumbTint="@color/switch_thumb_color"
+            android:trackTint="@color/switch_track_color" />
+        <EditText
+            android:id="@+id/feedbackEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_bg_rounded"
+            android:hint= "Feedback or Comment"
+            android:textColor="@color/black"
+            android:layout_marginTop="16dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:inputType="textMultiLine" /> <Button
+        android:id="@+id/submitFeedbackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_button_bg"
+        android:textColor="#FFFFFF" /></LinearLayout>
+</RelativeLayout>
